@@ -3,6 +3,7 @@ package com.codingame.ide.puzzle.onboarding;
 /**
 *	https://www.codingame.com/ puzzle solved by @author davidbalsasmartin
 **/
+
 import java.util.Scanner;
 
 class Player {
