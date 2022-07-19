@@ -1,8 +1,8 @@
 package com.codingame.ide.puzzle.onboarding;
 
 /**
-*	https://www.codingame.com/ puzzle solved by @author davidbalsasmartin
-**/
+ *	https://www.codingame.com/ puzzle solved by @author davidbalsasmartin
+ **/
 
 import java.util.Scanner;
 
