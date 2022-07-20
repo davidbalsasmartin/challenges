@@ -36,3 +36,35 @@ class Solution {
         System.out.println(minDiff);
     }
 }
+
+
+/**
+ * SAME CHALLENGE SOLVED WITH ARRAYLIST:
+ 
+ class Solution {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int N = in.nextInt();
+        List<Integer> strengths = new ArrayList<Integer>(); // List to store the strengths
+        int minDiff = 10000001; // Value greater than the maximum possible
+        for (int i = 0; i < N; i++) {
+            strengths.add(in.nextInt()); // It Stores the strengths in the list
+        }
+
+        Collections.sort(strengths); // It sorts the strength in ascending order
+
+        for(int i = 0; i < strengths.size() - 1; i++) {
+            int diff = strengths.get(i + 1) - strengths.get(i);
+            if (diff < minDiff) { // If the difference is smaller than the older smaller one, it will be saved
+                minDiff = diff;
+			if (minDiff == 0) { // If there is not any difference of strength, then the minimum is found
+				break;
+			}
+            }
+        }
+
+        System.out.println(minDiff);
+    }
+}
+**/
