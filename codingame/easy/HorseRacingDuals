@@ -17,21 +17,21 @@ class Solution {
             strengths.add(in.nextInt()); // It Stores the strengths in the TreeSet
         }
 
-		    if (strengths.size() < N) { // If there are less strengths saved in the Set than the given ones, it means that they were repeated and the difference is zero
-			    minDiff = 0;
-		    } else {
-			    Iterator<Integer> strIter = strengths.iterator();
-			    int prevStr = strIter.next(); // It saves the smallest value of each iteration, at first, the first value
-			    while(strIter.hasNext()) {
-				    int currentStr = strIter.next();
-				    int diff = currentStr - prevStr;
-				    if (diff < minDiff) { // If the difference of strengths is smaller than the older one, then this is the new value 
-					    minDiff = diff;
-				    }
-				    prevStr = currentStr; // Save second value, which will be the smallest one in the next iteration
+	if (strengths.size() < N) { // If there are less strengths saved in the Set than the given ones, it means that they were repeated and the difference is zero
+		minDiff = 0;
+	} else {
+		Iterator<Integer> strIter = strengths.iterator();
+		int prevStr = strIter.next(); // It saves the smallest value of each iteration, at first, the first value
+		while(strIter.hasNext()) {
+			int currentStr = strIter.next();
+			int diff = currentStr - prevStr;
+			if (diff < minDiff) { // If the difference of strengths is smaller than the older one, then this is the new value 
+				minDiff = diff;
+			}
+			prevStr = currentStr; // Save second value, which will be the smallest one in the next iteration
 
-			    }
-		    }
+		}
+	}
 
         System.out.println(minDiff);
     }
