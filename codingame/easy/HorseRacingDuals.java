@@ -47,7 +47,7 @@ class Solution {
         Scanner in = new Scanner(System.in);
         int N = in.nextInt();
         List<Integer> strengths = new ArrayList<Integer>(); // List to store the strengths
-        int minDiff = 10000001; // Value greater than the maximum possible
+        int minDiff = Integer.MAX_VALUE; // Value greater than the maximum possible
         for (int i = 0; i < N; i++) {
             strengths.add(in.nextInt()); // It Stores the strengths in the list
         }
