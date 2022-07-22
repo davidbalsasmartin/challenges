@@ -11,8 +11,8 @@ class Solution {
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt(); // the number of temperatures to analyse
-        int closestTemp = 5555; //Initialize with a temperature greater than the maximum
-        int closestDifference = 5555; //Initialize with a difference of temperature greater than the maximum
+        int closestTemp = Integer.MAX_VALUE; //Initialize with a temperature greater than the maximum
+        int closestDifference = Integer.MAX_VALUE; //Initialize with a difference of temperature greater than the maximum
         for (int i = 0; i < n; i++) {
             int t = in.nextInt(); // a temperature expressed as an integer ranging from -273 to 5526
             // If the temperature is greater than zero and the difference is minor, or it is equal but the other temperature is minor than zero
