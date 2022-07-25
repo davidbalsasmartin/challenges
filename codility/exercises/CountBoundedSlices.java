@@ -11,31 +11,25 @@ class Solution {
         int counter = 0;
         int max = 1000000000;
         for (int i = 0; i < A.length; i++) {
+            int maxN = A[i];
+            int minN = A[i];
             for (int x = i; x < A.length; x++) {
-                if (difference(A, i, x) <= K) {
+                if (A[x] > maxN) {
+                    maxN = A[x];
+                }
+                if (A[x] < minN) {
+                    minN = A[x];
+                }
+                if (maxN - minN <= K) {
                     counter++;
-                    if (counter == max) {
-                        return max;
-                    }
                 } else {
                     break;
                 }
             }
+            if (counter >= max) {
+                return max;
+            }
         }
         return counter;
-    }
-
-    private int difference(int[] A, int first, int last) {
-        int max = Integer.MIN_VALUE;
-        int min = Integer.MAX_VALUE;
-        for (int i = first; i <= last; i++) {
-            if (A[i] < min) {
-                min = A[i];
-            }
-            if (A[i] > max) {
-                max = A[i];
-            }
-        }
-        return max - min;
     }
 }
