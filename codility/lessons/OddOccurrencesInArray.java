@@ -1,4 +1,4 @@
-package com.codility.app.programmers.trainings.lessons.2-arrays.odd-occurrences-in-array;
+package com.codility.app.programmers.trainings.lessons.arrays.odd-occurrences-in-array;
 
 /**
 *	https://app.codility.com/ exercise solved by @author davidbalsasmartin
