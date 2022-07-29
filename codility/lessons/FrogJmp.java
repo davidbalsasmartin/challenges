@@ -1,4 +1,4 @@
-package com.codility.app.programmers.trainings.lessons.time-complexity.frog-jmp;
+package com.codility.app.programmers.lessons.time-complexity.frog-jmp;
 
 /**
 *	https://app.codility.com/ exercise solved by @author davidbalsasmartin
