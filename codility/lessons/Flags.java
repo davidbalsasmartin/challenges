@@ -10,7 +10,7 @@ class Solution {
     public int solution(int[] A) {
         List<Integer> peaks = getPeaks(A);
 
-        if (peaks.size() < 2) {
+        if (peaks.size() <= 2) {
             return peaks.size();
         }
 
