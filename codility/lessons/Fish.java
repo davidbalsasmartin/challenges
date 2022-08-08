@@ -26,6 +26,6 @@ class Solution {
                 downstream.addElement(A[i]);
             }
         }
-        return counterUp + downstream.size(); // Add the downstreams and upstreams fishes alives
+        return counterUp + downstream.size(); // Add the downstreams and upstreams fishes that survived
     }
 }
