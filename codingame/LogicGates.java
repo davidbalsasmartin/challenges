@@ -32,10 +32,12 @@ class Solution {
             String newSignal = "";
             char[] firstSignal = nameSignal.get(infoGates[i][2]).toCharArray();
             char[] secondSignal = nameSignal.get(infoGates[i][3]).toCharArray();
-
+            
+            // Get the function comparactor for this two signals, by its type of signal
             BiFunction<Character, Character, Character> actualComparation = getLogicComparatorByType(infoGates[i][1]);
 
             for (int x = 0; x < firstSignal.length; x++) {
+                // Compare each pair of chars and add the result to the new signal
                 newSignal += actualComparation.apply(firstSignal[x], secondSignal[x]);
             }
 
@@ -43,6 +45,9 @@ class Solution {
         }
     }
 
+    /**
+    * Select the correct comparator by signal type and return it as a BiFunction<Character, Character, Character>
+    **/
     private static BiFunction<Character, Character, Character> getLogicComparatorByType(String type) {
         BiFunction<Character, Character, Character> result = null;
         switch (type) {
