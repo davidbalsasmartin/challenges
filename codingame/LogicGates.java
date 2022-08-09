@@ -1,7 +1,7 @@
 package com.codingame.ide.puzzle.logic-gates;
 
 /**
-*	https://www.codingame.com/ puzzle solved by @author davidbalsasmartin
+*	https://www.codingame.com/ puzzle created by Codingame user b0n5a1 and solved by @author davidbalsasmartin
 **/
 
 import java.util.function.BiFunction;
