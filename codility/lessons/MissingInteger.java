@@ -1,3 +1,5 @@
+package com.codility.app.programmers.lessons.counting-elements.missing-integer;
+
 /**
 *	https://app.codility.com/ exercise solved by @author davidbalsasmartin
 **/
