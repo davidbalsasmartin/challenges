@@ -2,8 +2,6 @@ package com.codility.app.programmers.trainings.stacks-and-queues.brackets;
 
 /**
 *	https://app.codility.com/ exercise solved by @author davidbalsasmartin
-*
-*   This exercise is correct but it is a bit slow, I am still searching a better performance
 **/
 
 import java.util.Stack;
