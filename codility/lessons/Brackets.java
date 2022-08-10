@@ -1,4 +1,4 @@
-package com.codility.app.programmers.trainings.stacks-and-queues.brackets;
+package com.codility.app.programmers.lessons.stacks-and-queues.brackets;
 
 /**
 *	https://app.codility.com/ exercise solved by @author davidbalsasmartin
