@@ -13,20 +13,21 @@ class Solution {
         String b = in.nextLine();
 
         char[] charArray = b.toCharArray();
-        int max = 0;
+        int max = 0; // To handle the longest sequence of 1s
+        // Two counters to count each one from a different zero in the charArray
         int counter = 0;
         int secondCounter = 0;
         for (int i : charArray) {
             counter++;
             secondCounter++;
-            if (i == '0') {
+            if (i == '0') { // If there is a zero, restart the value of the biggest counter
                 if (counter > secondCounter) {
                     counter = 0;
                 } else {
                     secondCounter = 0;
                 }
             }
-            if (counter > secondCounter) {
+            if (counter > secondCounter) { // Check at the final of the loop if there is a new maximum value
                 if (counter > max) {
                     max = counter;
                 }
