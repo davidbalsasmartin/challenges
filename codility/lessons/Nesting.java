@@ -1,8 +1,8 @@
+package com.codility.app.programmers.lessons.stacks-and-queues.nesting;
+
 /**
 *	https://app.codility.com/ exercise solved by @author davidbalsasmartin
 **/
-
-import java.util.Stack;
 
 class Solution {
     public int solution(String S) {
