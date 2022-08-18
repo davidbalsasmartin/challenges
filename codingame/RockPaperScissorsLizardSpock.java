@@ -17,23 +17,23 @@ class Solution {
             String sign = in.next();
             tournament.put(number, sign);
         }
-        Map<Integer, String> winners = new HashMap<>();
-        Integer winnerKey = null;
+        Map<Integer, String> winners = new HashMap<>(); //To save the key of the winner and the defeated keys
+        Integer winnerKey = null; // To save the last key that has won
         while (tournament.size() > 1) {
-            Map<Integer, String> auxTournament = new LinkedHashMap<Integer, String>(tournament);
-            Integer lastNumber = null;
+            Map<Integer, String> auxTournament = new LinkedHashMap<Integer, String>(tournament); // Auxiliar map to iterate over it, and keep changing the original
+            Integer lastNumber = null; // To save the last key
             String lastSign = null;
             for (Map.Entry<Integer, String> entry: auxTournament.entrySet()) {
                 Integer key = entry.getKey();
-                if (lastNumber == null) {
+                if (lastNumber == null) { // To check if it is the first or the last pair between two pairs
                     lastNumber = key;
                     lastSign = entry.getValue();
                 } else {
-                    if (isFirstBetter(lastNumber, lastSign, key, entry.getValue())) {
+                    if (isFirstBetter(lastNumber, lastSign, key, entry.getValue())) { //If 'lastNumber' win vs key
                         winners.put(lastNumber, addOrUpdate(winners.get(lastNumber), key));
                         tournament.remove(key);
                         winnerKey = lastNumber;
-                    } else {
+                    } else { //If key won vs lastNumber
                         winners.put(key, addOrUpdate(winners.get(key), lastNumber));
                         tournament.remove(lastNumber);
                         winnerKey = key;
@@ -47,10 +47,16 @@ class Solution {
         System.out.println(winners.get(winnerKey));
     }
 
+    /**
+    *   Check that the current number exists to add a space and the second number, or only return the second number
+    **/
     private static String addOrUpdate(String number, Integer secondNumber) {
         return number == null ? secondNumber.toString() : (number + " " + secondNumber);
     }
 
+    /**
+    *   Check if the first number and sign are better than the second ones
+    **/
     private static boolean isFirstBetter(int first, String firstType, int second,  String secondType) {
         if (firstType.equals(secondType)) {
             return first < second ? true : false;
