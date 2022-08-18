@@ -1,5 +1,3 @@
-package com.codility.app.programmers.lessons.stacks-and-queues.nesting;
-
 /**
 *	https://app.codility.com/ exercise solved by @author davidbalsasmartin
 **/
