@@ -32,7 +32,8 @@ class Solution {
 
 /**
 *   Same challenge using LinkedList instead of Stack
-**
+**/
+
 import java.util.LinkedList;
 
 class Solution {
