@@ -1,4 +1,4 @@
-package com.codewars.counting-duplicates;
+package com.codewars.not-very-secure;
 
 /**
  *	https://www.codewars.com/ challenge solved by @author davidbalsasmartin
