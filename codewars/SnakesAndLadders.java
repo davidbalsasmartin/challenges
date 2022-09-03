@@ -11,12 +11,12 @@ public class SnakesLadders {
   
     private static final Map<Integer, Integer> ladders;
     private static final Map<Integer, Integer> snakes;
-    private boolean nextFirstP = true;
-    private Integer firstPlayer = 0;
-    private Integer secondPlayer = 0;
     private static final String CONTINUE = "Player %d is on square %d";
     private static final String GAME_OVER = "Game over!";
     private static final String WINNER = "Player %d Wins!";
+    private boolean nextFirstP = true;
+    private Integer firstPlayer = 0;
+    private Integer secondPlayer = 0;
   
     public SnakesLadders() {
       ladders = new HashMap<Integer, Integer>() {{
@@ -67,6 +67,9 @@ public class SnakesLadders {
       return currentPlayer == 100 ? String.format(WINNER, currentNumber) : String.format(CONTINUE, currentNumber, currentPlayer);
     }
   
+  /**
+   * Move the player to the next position, according to the current position, the dies, the snakes, the ladders and the bounce
+   **/
   private Integer move(Integer player, int dies) {
     player += dies;
     if (player > 100) {
