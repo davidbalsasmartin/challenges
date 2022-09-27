@@ -4,7 +4,7 @@ package com.codewars.sort-the-odd;
  *	https://www.codewars.com/ challenge solved by @author davidbalsasmartin
  **/
  
- import java.util.LinkedList;
+import java.util.LinkedList;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
