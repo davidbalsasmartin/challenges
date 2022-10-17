@@ -12,3 +12,13 @@ public class Counter {
     return Collections.frequency(Arrays.asList(arrayOfSheeps), true);
   }
 }
+
+// With Stream, worse performance
+
+import java.util.stream.Stream;
+
+public class Counter {
+  public int countSheeps(Boolean[] arrayOfSheeps) {
+    return (int) Stream.of(arrayOfSheeps).filter(i -> i != null && i == true).count();
+  }
+}
