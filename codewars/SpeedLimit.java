@@ -26,7 +26,6 @@ public class Kata {
 import java.util.stream.IntStream;
 
 public class Kata {
-  
     public static int speedLimit(final int speed, final int[] signals) {
       return IntStream.of(signals).map(signal -> fine(speed, signal)).sum();
     }
