@@ -7,7 +7,7 @@ package com.edabit.challenge.consecutive-numbers;
 import java.util.Arrays;
 
 public class Challenge {
-	public static boolean cons(int[] arr) {
+  public static boolean cons(int[] arr) {
     boolean result = true;
     Arrays.sort(arr);
     for (int i = 0; i < arr.length - 1; i++) {
@@ -19,3 +19,15 @@ public class Challenge {
     return result;
   }
  }
+
+// The same problem solved with IntStream
+
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
+public class Challenge {
+  public static boolean cons(int[] arr) {
+    Arrays.sort(arr);
+    return Arrays.equals(arr, IntStream.rangeClosed(arr[0], arr[arr.length - 1]).toArray());
+  }
+}
