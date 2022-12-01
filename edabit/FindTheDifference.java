@@ -18,3 +18,14 @@ package com.edabit.challenge.find-the-difference;
 		return result;
 	}
 }
+
+
+// Made it with IntStream
+
+import java.util.stream.IntStream;
+
+public class LetterDifference {
+	public static char findTheDifference(String s, String t) {
+		return t.charAt(IntStream.range(0, t.length()).filter(i -> (s + " ").charAt(i) != t.charAt(i)).findFirst().getAsInt());
+	}
+}
