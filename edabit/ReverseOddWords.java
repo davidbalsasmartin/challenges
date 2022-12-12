@@ -1,4 +1,4 @@
-package com.edabit.challenge.ReverseOddWords;
+package com.edabit.challenge.reverse-odd-words;
 
 /**
  *	https://edabit.com/ challenge solved by @author davidbalsasmartin
