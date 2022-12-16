@@ -1,4 +1,4 @@
-package com.edabit.challenge.difference-cipher;
+package com.edabit.challenge.harshad-number;
 
 /**
  *	https://edabit.com/ challenge solved by @author davidbalsasmartin
