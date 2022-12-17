@@ -1,7 +1,7 @@
-package com.codewars.all-unique;
+package com.edabit.challenge.sentence-searcher;
 
 /**
- *	https://www.codewars.com/ challenge solved by @author davidbalsasmartin
+ *	https://edabit.com/ challenge solved by @author davidbalsasmartin
  **/
 
 public class SentenceAtWord {
