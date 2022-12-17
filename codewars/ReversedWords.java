@@ -5,11 +5,11 @@ package com.codewars.reversed-words;
  **/
 
 public class ReverseWords{
- public static String reverseWords(String str){
-   String reverse = "";
-   for (String i : str.split(" ")) {
-     reverse = " " + i + reverse;
-   }
-  return reverse.substring(1);
- }
+  public static String reverseWords(String str){
+    String reverse = "";
+    for (String i : str.split(" ")) {
+      reverse = " " + i + reverse;
+    }
+    return reverse.substring(1);
+  }
 }

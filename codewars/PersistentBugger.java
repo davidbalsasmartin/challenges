@@ -7,13 +7,13 @@ package com.codewars.persistent-bugger;
 import java.util.stream.Collectors;
 
 class Persist {
-	public static int persistence(long n) {
+  public static int persistence(long n) {
     int count = 0;
     String nString = Long.toString(n);
     while (nString.length() > 1) {
       count++;
       nString = String.valueOf(nString.chars().mapToObj(i -> Character.getNumericValue(i)).reduce(1, (a, b) -> a * b));
     }
-	  return count;
+    return count;
   }
 }

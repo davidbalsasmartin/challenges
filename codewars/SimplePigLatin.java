@@ -4,8 +4,8 @@ package com.codewars.simple-pig-latin;
  *	https://www.codewars.com/ challenge solved by @author davidbalsasmartin
  **/
 
-import java.util.stream.Stream;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class PigLatin {
     public static String pigIt(String str) {

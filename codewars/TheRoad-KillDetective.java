@@ -7,7 +7,6 @@ package com.codewars.the-road-kill-detective;
  import java.util.regex.*;
 
 public class Dinglemouse {
-
   static String roadKill(final String photo) {
     String result = "??";
     if (photo.replaceAll("[^A-Za-z ]", "").length() < 3)

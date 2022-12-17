@@ -10,10 +10,10 @@ import java.util.List;
 import java.util.Map;
 
 public class EnoughIsEnough {
-	public static int[] deleteNth(int[] elements, int maxOccurrences) {
+  public static int[] deleteNth(int[] elements, int maxOccurrences) {
     if (maxOccurrences == 0)
       return new int[0];
-		Map<Integer, Integer> counter = new HashMap<>();
+    Map<Integer, Integer> counter = new HashMap<>();
     List<Integer> result = new LinkedList<>();
     for (Integer i : elements) {
       Integer value = counter.putIfAbsent(i, 1);
@@ -27,6 +27,6 @@ public class EnoughIsEnough {
         result.add(i);
       }
     }
-		return result.stream().mapToInt(i->i).toArray();
-	}
+    return result.stream().mapToInt(i->i).toArray();
+  }
 }

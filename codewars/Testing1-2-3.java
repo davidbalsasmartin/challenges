@@ -8,12 +8,12 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class LineNumbering {
-    public static List<String> number(List<String> lines) {
-        List<String> formattedLines = new LinkedList<>();
-        int counter = 1;
-        for (String i : lines) {
-          formattedLines.add(counter++ + ": " + i);
-        }
-        return formattedLines;
+  public static List<String> number(List<String> lines) {
+    List<String> formattedLines = new LinkedList<>();
+    int counter = 1;
+    for (String i : lines) {
+      formattedLines.add(counter++ + ": " + i);
     }
+    return formattedLines;
+  }
 }
