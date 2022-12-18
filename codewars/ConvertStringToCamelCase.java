@@ -4,14 +4,13 @@ package com.codewars.convert-string-to-camel-case;
  *	https://www.codewars.com/ challenge solved by @author davidbalsasmartin
  **/
 
-static String toCamelCase(String s) {
+class Solution{
+  static String toCamelCase(String s) {
     String[] array = s.split("[-_]");
-    String result = array[0];
-    for (int i = 1; i < array.length; i++) {
-      result += firstCamelCase(array[i]);
-    }
-    
-    return result;
+    StringBuilder result = new StringBuilder(array[0]);
+    for (int i = 1; i < array.length; i++)
+      result.append(firstCamelCase(array[i]));
+    return result.toString();
   }
   
   private static String firstCamelCase(String i) {
