@@ -1,4 +1,4 @@
-package com.edabit.challenge.array-of-multiples;
+package com.edabit.challenge.oddish-vs-evenish;
 
 /**
  *	https://edabit.com/ challenge solved by @author davidbalsasmartin
