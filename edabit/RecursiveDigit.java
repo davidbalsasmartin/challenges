@@ -15,7 +15,6 @@ public class Challenge {
         sum += Character.getNumericValue(n.charAt(counter));
       }
       n = Integer.toString(sum);
-      System.out.println("vuelta " + i + " n = " + n);
     }
     return sum;
   }
