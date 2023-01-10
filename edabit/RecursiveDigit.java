@@ -14,5 +14,5 @@ public class Challenge {
       n = Integer.toString(i == 0 ? sum * k : sum);
     }
     return sum;
-	 }
+  }
 }
