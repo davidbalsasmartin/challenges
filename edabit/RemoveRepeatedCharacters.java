@@ -11,6 +11,10 @@ public class Challenge {
 }
 
 // Another way
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.stream.Collectors;
+
 public class Challenge {
 	public static String unrepeated(String str) {
 		return new LinkedHashSet<>(Arrays.asList(str.split(""))).stream().collect(Collectors.joining());
