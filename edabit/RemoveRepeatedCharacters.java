@@ -5,7 +5,14 @@ package com.edabit.challenge.remove-repeated-characters;
  **/
 
 public class Challenge {
-  public static String unrepeated(String str) {
-	  return str.chars().distinct().mapToObj(c -> (char) c).collect(StringBuilder::new, StringBuilder::append, StringBuilder::append).toString();
-  }
+	public static String unrepeated(String str) {
+		return str.chars().distinct().mapToObj(c -> (char) c).collect(StringBuilder::new, StringBuilder::append, StringBuilder::append).toString();
+	}
+}
+
+// Another way
+public class Challenge {
+	public static String unrepeated(String str) {
+		return new LinkedHashSet<>(Arrays.asList(str.split(""))).stream().collect(Collectors.joining());
+	}
 }
