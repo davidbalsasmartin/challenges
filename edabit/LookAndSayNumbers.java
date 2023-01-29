@@ -4,7 +4,10 @@ package com.edabit.challenge.look-and-say-numbers;
  *	https://edabit.com/ challenge solved by @author davidbalsasmartin
  **/
 
-public static BigInteger lookAndSay(long n) {
+import java.math.BigInteger;
+
+public class Numbers {
+	public static BigInteger lookAndSay(long n) {
 		BigInteger result = BigInteger.ZERO;
 		if (String.valueOf(n).length() % 2 != 0)
 			return BigInteger.valueOf(-1);
@@ -25,3 +28,4 @@ public static BigInteger lookAndSay(long n) {
 		}
 		return result;
 	}
+}
