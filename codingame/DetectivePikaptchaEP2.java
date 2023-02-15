@@ -83,8 +83,8 @@ class Player {
         int currentY = axis[1];
         if (currentX >= 0 && currentX < width && currentY >= 0 && currentY < height && map[currentY].charAt(currentX) != '#') {
             result = true;
-            x = axis[0];
-            y = axis[1];
+            x = currentX;
+            y = currentY;
             map[y].setCharAt(x, (char) (Character.isDigit(map[y].charAt(x)) ? map[y].charAt(x) + 1 : 49));
         }
         return result;
